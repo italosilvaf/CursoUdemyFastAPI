@@ -2,7 +2,7 @@ from sqlmodel import SQLModel
 from core.database import engine
 
 
-async def crate_tables() -> None:
+async def create_tables() -> None:
     import models.__all_models
     print('Criando tabelas no banco de dados...')
 
@@ -15,4 +15,4 @@ async def crate_tables() -> None:
 if __name__ == '__main__':
     import asyncio
 
-    asyncio.run(crate_tables())
+    asyncio.run(create_tables())
